@@ -1,0 +1,36 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+@layer utilities {
+
+  .gradient-text-black {
+    background: linear-gradient(to top, #000000, #686868);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-gradent-red{
+    background-image: linear-gradient(#FF6761, #FF1D1D);
+  }
+  
+  .group:hover .group-hover\:gradient-text-yellow {
+    background: linear-gradient(to top, #F8E889, #E4B764);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-yellow {
+    background: linear-gradient(to top, #F8E889, #E4B764);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+}
+
+/* @layer base {
+  body {
+    @apply font-inter;
+  }
+} */
