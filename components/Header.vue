@@ -4,7 +4,8 @@
     <div class="bg-gradient-to-r from-[#F8E889] to-[#E4B764] to-[98%] ">
       <div class="flex container mx-auto max-h-max">
 
-        <div class=" bg-black text-white text-[4rem] rounded-tr-[3.5rem] pr-4 max-h-full  relative">
+        <div class="hidden xl:block bg-black text-white text-[4rem] rounded-tr-[3.5rem] pr-4 max-h-full relative">
+
           <div>LOGO</div>
           <div class="absolute z-0 bg-black h-full top-0 left-0 w-[150%] transform -translate-x-[99%]"></div>
         </div>
@@ -12,7 +13,7 @@
         <div class="flex flex-col w-full z-10 relative">
           <div class="grid grid-cols-12 h-full items-center py-3 gap-5">
 
-            <div class="  col-span-9 ">
+            <div class="hidden xl:block  col-span-9 ">
               <ul class="flex justify-between w-full *:transition *:duration-500 *:text-[14px]">
                 <li v-for="(item, index) in dropdownItems" :key="index" class="group relative w-[8rem] py-1 cursor-pointer">
                   <!-- Button -->
@@ -36,7 +37,7 @@
               </ul>
             </div>
             <!-- Button Login -->
-            <div v-if="!userStore.isLogin" class="col-span-3">
+            <div v-if="!userStore.isLogin" class="col-span-12 xl:col-span-3">
               <div class="flex justify-around flex-2/6 *:uppercase *:px-8 *:py-[6px] *:backdrop-blur-md ">
                 <a href="javascript:void(0)" @click="login"
                   class="border-white border-2 bg-[#F4F5F7] rounded-full  font-bold text-md ">
@@ -49,19 +50,20 @@
               </div>
             </div>
             <!-- Profile -->
-            <div v-else class=" col-span-3 relative">
+            <div v-else class=" col-span-12 xl:col-span-3 relative">
 
               <div class="bg-gradient-to-b from-[#5C5C5C] to-black border border-[#1A1A1A] grid grid-cols-2  h-[40px] items-center pl-[2px] rounded-full gap-2">
 
                 <div class="group relative ">
 
-                  <div class="border-white border-2 bg-[#F4F5F7] rounded-full h-[90%] flex justify-between items-center z-20 relative">
+                  <div class="border-white border-2 bg-[#F4F5F7] rounded-full h-full flex justify-between items-center z-20 relative">
                     <img class="h-[70%] px-2" src="/public/icons/user/Coin.png" alt="">
                     <div class="text-[#1A1A1A] text-xl font-semibold w-full">1000</div>
-                    <div
-                      class="bg-gradient-to-b from-[#F8E889] to-[#E4B764] h-[90%] flex items-center rounded-full w-[20%] mr-1 border border-amber-400 cursor-pointer">
-                      <img class="h-[18px] w-[18px] transition-transform duration-300 group-hover:rotate-45 " src="/public/icons/user/Plus.png" alt="">
+                    <div class=" w-full h-full">
+                    <div class="bg-gradient-to-b w-fit h-fit float-end from-[#F8E889] to-[#E4B764]  flex items-center rounded-full  mr-1 border border-amber-400 cursor-pointer">
+                      <img class="h-[20px] w-[20px] transition-transform duration-300 group-hover:rotate-45 " src="/public/icons/user/Plus.png" alt="">
                     </div>
+                  </div>
 
                   </div>
 
@@ -196,10 +198,10 @@
           </div>
 
 
-          <div class="grid grid-cols-12 h-[90%] items-center bg-black relative pl-3 py-1 gap-5">
+          <div class="grid grid-cols-12 h-[90%] items-center bg-black relative xl:pl-3 py-1 gap-5">
             <div class="absolute z-0 bg-black h-full top-0 right-0 w-[50%] transform translate-x-[99%]"></div>
 
-            <div class="col-span-9 ">
+            <div class="hidden xl:block col-span-9 ">
               <div class="flex items-center h-full justify-between">
                 <div class="flex items-center gap-2">
                   <img src="public/icons/Frame 96.svg" alt="icon">
@@ -229,8 +231,8 @@
             </div>
 
 
-            <div class="col-span-3">
-              <div class="flex justify-between text-white h-full relative items-center px-2">
+            <div class="col-span-12 xl:col-span-3">
+              <div class="flex justify-between text-white h-full relative items-center">
                 <div class="border-2 border-white bg-[#F4F5F7] rounded-full flex items-center">
                   <div class="text-md uppercase gradient-text-black font-bold px-6  py-1 relative">
                     <div class="pl-3">tiếng việt</div>
