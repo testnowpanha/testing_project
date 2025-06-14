@@ -123,7 +123,7 @@ const thumbnails = ref([
     subscribed: false
   },
   {
-    thumbnail: '/thumbnails/1.jpg',
+    thumbnail: '/thumbnails/2.jpg',
     hot: true,
     status_label: '/thumbnails/Status.png',
     label: '/icons/Frame 8912.png',
@@ -137,14 +137,14 @@ const thumbnails = ref([
     subscribed: false
   },
   {
-    thumbnail: '/thumbnails/1.jpg',
+    thumbnail: '/thumbnails/3.jpg',
     hot: true,
     status_label: '/thumbnails/live.png',
     label: '/icons/Frame 8912.png',
     subscribed: false
   },
   {
-    thumbnail: '/thumbnails/1.jpg',
+    thumbnail: '/thumbnails/2.jpg',
     hot: true,
     status_label: '/thumbnails/Status.png',
     label: '/icons/Frame 8912.png',
