@@ -201,8 +201,8 @@ const slideNext = () => swiperInstance.value?.slideNext();
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 52px;
-  height: 124px;
+  width: 45px;
+  height: 114px;
   background-color: rgb(247, 247, 247);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -229,7 +229,7 @@ const slideNext = () => swiperInstance.value?.slideNext();
 }
 
 .button-disabled {
-  opacity: 0.9;
+  opacity: 0.6;
   cursor: not-allowed;
   pointer-events: none;
 }
